@@ -63,7 +63,7 @@ export class AppComponent implements OnInit {
   workData = [
 
     {
-      Urlherf:"",
+      Urlherf: "",
       imageList: [
         {
           urlSrc: 'erp/1.png'
@@ -99,7 +99,7 @@ export class AppComponent implements OnInit {
       bodyAr: ""
     },
     {
-      Urlherf:"https://bloomwealthproperties.com/",
+      Urlherf: "https://bloomwealthproperties.com/",
       imageList: [
         {
           urlSrc: 'bloom/1.webp'
@@ -119,7 +119,7 @@ export class AppComponent implements OnInit {
       bodyAr: ""
     },
     {
-      Urlherf:"https://globisoft.com/",
+      Urlherf: "https://globisoft.com/",
       imageList: [
         {
           urlSrc: 'globisoft/1.png'
@@ -149,7 +149,7 @@ export class AppComponent implements OnInit {
       bodyAr: ""
     },
     {
-      Urlherf:"",
+      Urlherf: "",
       imageList: [
         {
           urlSrc: 'E_invoice.png'
@@ -163,8 +163,8 @@ export class AppComponent implements OnInit {
     },
 
     {
-    
-      Urlherf:"https://digital.menus-and-more.com/plan/2",
+
+      Urlherf: "https://digital.menus-and-more.com/plan/2",
       imageList: [
         {
           urlSrc: 'menu/1.png'
@@ -183,7 +183,7 @@ export class AppComponent implements OnInit {
       bodyAr: ""
     },
     {
-      Urlherf:"https://hsk.menus-and-more.com/plan/2",
+      Urlherf: "https://hsk.menus-and-more.com/plan/2",
       imageList: [
         {
           urlSrc: 'hsk/1.png'
@@ -230,9 +230,11 @@ export class AppComponent implements OnInit {
   }
 
 
-  openLink(link:any) {
-    if(link){
-    window.open(`${link}`, '_blank');
+
+
+  openLink(link: any) {
+    if (link) {
+      window.open(`${link}`, '_blank');
     }
 
   }
@@ -243,7 +245,9 @@ export class AppComponent implements OnInit {
 
   }
 
-
+  openPdf() {
+    window.open('Esraa-Salah _Cv.pdf', '_blank');
+  }
   downloadCV() {
     const link = document.createElement('a');
     link.href = 'Esraa-Salah _Cv.pdf';
