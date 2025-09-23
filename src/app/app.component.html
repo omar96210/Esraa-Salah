@@ -178,11 +178,7 @@
         </div>
 
         <p class=" col-12 poppins-medium darckBlue p-0 m-0 text-dynamic-extraSmall">
-          I'm a Java Backend Developer with experience in building secure, scalable web applications using Java, Spring
-          Boot, MySQL . I’m
-          passionate about clean code, solving backend challenges, and delivering reliable end-to-end solutions. I’ve
-          developed robust
-          Restful APIs , implemented Spring Security, and collaborated in Agile teams to meet business needs.
+          I am a passionate Java Backend Developer with a focus on building secure and scalable web applications. With extensive experience in Java, Spring Boot, and MySQL, I thrive on writing clean code and creating reliable solutions that meet client needs. 
         </p>
 
         <div class="col-12 p-4">
@@ -215,12 +211,14 @@
 
       <div class="row  p-4">
         <div class="col-12 poppins-extrabold  p-0 m-0 text-dynamic-large headerColorYel">
-          Work.
+          Projects.
         </div>
 
         <div class="row ">
           @for (datarec of workData; track $index) {
-          <div class="col-md-6 col-12 p-2 " style="overflow: hidden;">
+          <div class="col-md-6 col-12 p-2 " style="overflow: hidden;"
+          [ngClass]="datarec.Urlherf?'pointer':''"
+          (click)="openLink(datarec.Urlherf)">
             <div class=" ">
               <swiper-container pagination="true" loop="true" effect="fade"
                 autoplay='{"delay":1500,"disableOnInteraction":false}'>
@@ -230,7 +228,6 @@
                     <img class="img-fluid" [src]="imageItem.urlSrc">
                   </div>
                 </swiper-slide>
-
                 }
               </swiper-container>
 

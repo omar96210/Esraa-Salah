@@ -3,13 +3,14 @@ import { register } from 'swiper/element/bundle';
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { Navigation, Pagination } from 'swiper/modules';
+import { CommonModule } from '@angular/common';
 
 
 register();
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
@@ -25,14 +26,23 @@ export class AppComponent implements OnInit {
 
       bodydata: [
         {
-          bodyEn: "Faculty Of Computers and Informatics.  Ismailia <br>  BSc of information systems, Suez Canal University.",
+          bodyEn: "B.Sc. in Information Systems  – Suez Canal University, Faculty of Computers and Informatics",
           bodyAr: "بكالوريوس نظم المعلومات، جامعة قناة السويس"
-        },
+        }
+      ]
+    },
+
+
+    {
+      titleEn: "Training and Courses",
+      titleAr: "",
+      bodydata: [
         {
-          bodyEn: "Information Technology Institute <br>   (ITI) CAIRO, Smart Village Java Enterprise and Web Applications 9-Month Diploma",
+          bodyEn: "ITI 9-Month Diploma in Java Enterprise & Web Applications  –  Cairo, Smart Village",
           bodyAr: ""
         }
       ]
+
     },
 
     {
@@ -40,7 +50,7 @@ export class AppComponent implements OnInit {
       titleAr: "",
       bodydata: [
         {
-          bodyEn: " Globisoft Java Developer  <br>Designed and developed robust and scalable web applications using Spring Boot framework, adhering to best practices and coding standards",
+          bodyEn: "Java Backend Developer at Globisoft – Full Time  <br>Designed and developed robust and scalable web applications using Spring Boot, Spring Data, Spring Security and Mysql adhering to best practices and coding standards",
           bodyAr: ""
         }
       ]
@@ -51,20 +61,9 @@ export class AppComponent implements OnInit {
 
 
   workData = [
-    {
-      imageList: [
-        {
-          urlSrc: 'E_invoice.png'
-        }
 
-      ],
-      titleEn: "E_invoice And E_RECEIPTS web application",
-      titleAr: "تطبيق ويب للفواتير والإيصالات الإلكترونية",
-      bodyEn: "current A backend web application for E-Invoice and E-Receipts using Spring Boot, facilitating seamless integration with the Tax System (ETA) ,submission of electronic receipts and invoices . Implemented features for returning receipts , canceling, and rejecting invoices .",
-      bodyAr: "تطوير تطبيق ويب للجزء الخلفي (Backend) خاص بالفواتير والإيصالات الإلكترونية باستخدام Spring Boot، مع تمكين التكامل السلس مع مصلحة الضرائب المصرية (ETA). تم تنفيذ خصائص لإرسال الفواتير والإيصالات الإلكترونية، بالإضافة إلى خصائص لإرجاع الإيصالات وإلغاء ورفض الفواتير."
-
-    },
     {
+      Urlherf:"",
       imageList: [
         {
           urlSrc: 'erp/1.png'
@@ -94,12 +93,13 @@ export class AppComponent implements OnInit {
 
 
       ],
-      titleEn: "Almongez ERP web application — POS",
+      titleEn: "Almongez ERP web application",
       titleAr: "",
-      bodyEn: "Web application for point-of-sale system used to facilitate sales transactions, process payments, and manage inventory. Allows businesses to create and manage sales transactions, including adding products to the sale, applying discounts or promotions, and calculating totals. Tracks inventory levels in real-time . updates stock quantities each sale, generates inventory reports, and sends alerts for low stock levels. Supports various payment methods, such as cash, credit cards, loyalty points.",
+      bodyEn: "An ERP system (Spring Boot, Mysql ) with inventory , purchasing , sales , manufacturing , POS(point of sale)  and other modules.",
       bodyAr: ""
     },
     {
+      Urlherf:"https://bloomwealthproperties.com/",
       imageList: [
         {
           urlSrc: 'bloom/1.webp'
@@ -113,12 +113,58 @@ export class AppComponent implements OnInit {
 
 
       ],
-      titleEn: "Bloom Website — Real Estate website",
+      titleEn: "Bloom Website",
       titleAr: "",
-      bodyEn: "A Real estate website displays properties and their information. Allows users to search for properties based on various criteria such as location, property usage, and developer. Include advanced search filters to help users narrow down their property search based on specific requirements like price range, property type, size, number of bedrooms, bathrooms, etc.",
+      bodyEn: "A Real estate website (SpringBoot, Mysql ) displays properties and their information. Allows users to search for properties based on various criteria.",
       bodyAr: ""
     },
     {
+      Urlherf:"https://globisoft.com/",
+      imageList: [
+        {
+          urlSrc: 'globisoft/1.png'
+        },
+        {
+          urlSrc: 'globisoft/2.png'
+        },
+        {
+          urlSrc: 'globisoft/3.png'
+        },
+        {
+          urlSrc: 'globisoft/4.png'
+        },
+        {
+          urlSrc: 'globisoft/5.png'
+        },
+        {
+          urlSrc: 'globisoft/6.png'
+        },
+        {
+          urlSrc: 'globisoft/7.png'
+        }
+      ],
+      titleEn: "Globisoft Website",
+      titleAr: "",
+      bodyEn: "A website (Spring Boot, Mysql ) that shows all company projects and their features, about us page,contact us and blogs.",
+      bodyAr: ""
+    },
+    {
+      Urlherf:"",
+      imageList: [
+        {
+          urlSrc: 'E_invoice.png'
+        }
+
+      ],
+      titleEn: "E_invoice And E_RECEIPTS web application",
+      titleAr: "",
+      bodyEn: "A backend web application(SpringBoot, Mysql) for E-Invoice and E-Receipts using Spring Boot, facilitating seamless integration with the Tax System (ETA).",
+      bodyAr: ""
+    },
+
+    {
+    
+      Urlherf:"https://digital.menus-and-more.com/plan/2",
       imageList: [
         {
           urlSrc: 'menu/1.png'
@@ -131,12 +177,13 @@ export class AppComponent implements OnInit {
         }
 
       ],
-      titleEn: "Menu (View-Dining-Delivery) Website",
+      titleEn: "Digital Menu website",
       titleAr: "",
-      bodyEn: "A platform for restaurant owners that enables them to display the restaurant’s menu in the form of an electronic menu that can be accessed from anywhere through the menu’s QR code. Customers can place an order through the menu with ease, whether from home (delivery) or inside the restaurant based on the table number (dine in) or takeaway orders.",
+      bodyEn: "A platform (Spring Boot, Mysql) for restaurants to make digital menus and QR code. Customers can place an order through the menu with ease.",
       bodyAr: ""
     },
     {
+      Urlherf:"https://hsk.menus-and-more.com/plan/2",
       imageList: [
         {
           urlSrc: 'hsk/1.png'
@@ -149,9 +196,9 @@ export class AppComponent implements OnInit {
         }
 
       ],
-      titleEn: "E-commerce Carpets Website",
+      titleEn: "HSK website",
       titleAr: "",
-      bodyEn: "Online platform designed for buying carpets.<br> Listing provides comprehensive details about the product. The website incorporates a shopping cart system where customers can add carpets to their cart and proceed to the checkout process. During checkout, customers provide shipping details, select payment methods, and complete the purchase.",
+      bodyEn: "Online platform(Spring Boot, Mysql) designed for  carpets stores.",
       bodyAr: ""
     }
 
@@ -173,6 +220,13 @@ export class AppComponent implements OnInit {
   }
 
 
+  openLink(link:any) {
+    if(link){
+    window.open(`${link}`, '_blank');
+    }
+
+  }
+
 
   openlinkend() {
     window.open('https://www.linkedin.com/in/esraa-salah-3a32a3b1/', '_blank');
@@ -182,8 +236,8 @@ export class AppComponent implements OnInit {
 
   downloadCV() {
     const link = document.createElement('a');
-    link.href = 'Esraa Salah _Cv.pdf';
-    link.download = 'EsraaSalah-CV.pdf';
+    link.href = 'Esraa-Salah _Cv.pdf';
+    link.download = 'Esraa-Salah _Cv.pdf';
     link.click();
   }
 }
