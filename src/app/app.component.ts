@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { register } from 'swiper/element/bundle';
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
@@ -204,12 +204,22 @@ export class AppComponent implements OnInit {
 
   ]
 
-
+  isMobile = false;
 
   ngOnInit() {
-
-
+    this.checkScreenSize();
   }
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.checkScreenSize();
+  }
+
+  private checkScreenSize() {
+    this.isMobile = window.innerWidth <= 768; // you can adjust breakpoint
+  }
+
+
 
   openGmail() {
     window.open('mailto:esraasalah937@gmail.com', '_blank');

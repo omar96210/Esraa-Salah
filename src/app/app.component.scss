@@ -127,6 +127,30 @@ body {
 
 
 ul li::marker {
-  font-size: 32px;  /* حجم العلامة */
-  color: #03045e;   /* لون العلامة */
+    font-size: 32px;
+    /* حجم العلامة */
+    color: #03045e;
+    /* لون العلامة */
+}
+
+
+.paddingTop {
+
+    padding-top: 120px;
+}
+
+.paddingTopMobile {
+
+    padding-top: 40px;
+
+
+}
+
+
+
+.padingLeft{
+   padding-left: 70px;
+}
+.padingLeftMobile {
+  padding-left: 30px;
 }
