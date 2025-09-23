@@ -1,0 +1,132 @@
+body {
+
+    background-color: #faf7ca;
+
+
+}
+
+.section1 {
+    height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.section {
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+/* Group 11 */
+.text-dynamic-small {
+    font-size: clamp(2rem, 2.5vw, 28px);
+    /* للجمل الصغيرة */
+}
+
+.text-dynamic-medium {
+    font-size: clamp(2rem, 3vw, 32px);
+    /* للزرار */
+}
+
+.text-dynamic-large {
+    font-size: clamp(3rem, 8vw, 100px);
+    /* للعناوين الكبيرة */
+}
+
+
+.text-dynamic-extraSmall {
+    font-size: clamp(1rem, 2vw, 24px);
+    /* للجمل الصغيرة */
+}
+
+.text-dynamic-extraExtraSmall {
+    font-size: clamp(0.5rem, 1.5vw, 18px);
+    /* للجمل الصغيرة */
+}
+
+
+.imageanimation {
+    opacity: 0;
+    animation: imageanimation 2s ease 2s 1 normal forwards;
+}
+
+@keyframes imageanimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.fadeinleft1 {
+    opacity: 0;
+    animation: fadeinlef 2s ease 0s 1 normal forwards;
+}
+
+.fadeinleft2 {
+    opacity: 0;
+    animation: fadeinlef 2s ease 0.5s 1 normal forwards;
+}
+
+.fadeinleft3 {
+    opacity: 0;
+    animation: fadeinlef 2s ease 1s 1 normal forwards;
+}
+
+.fadeinleft4 {
+    opacity: 0;
+    animation: fadeinlef 2s ease 1.5s 1 normal forwards;
+}
+
+.fadeintop {
+
+    animation: fadeintop 1s ease 0s 1 normal forwards;
+}
+
+
+@keyframes fadeinlef {
+    0% {
+        opacity: 0;
+
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes fadeintop {
+    0% {
+        opacity: 0;
+
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.headerColorYel {
+    color: #f7f197;
+    -webkit-text-stroke: 1px black;
+}
+
+
+ul li::marker {
+  font-size: 32px;  /* حجم العلامة */
+  color: #03045e;   /* لون العلامة */
+}
